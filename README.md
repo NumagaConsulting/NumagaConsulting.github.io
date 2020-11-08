@@ -1,0 +1,1 @@
+# NumagaConsulting.github.io
