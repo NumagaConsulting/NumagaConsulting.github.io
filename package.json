@@ -1,0 +1,17 @@
+{
+  "name": "node-quote",
+  "version": "0.1.0",
+  "description": "A sample Node.js app using http",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+  },
+  "keywords": [
+    "node",
+    "heroku",
+  ],
+  "license": "MIT"
+}
