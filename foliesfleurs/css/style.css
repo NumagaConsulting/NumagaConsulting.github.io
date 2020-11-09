@@ -9857,6 +9857,7 @@ html [class*='section-'].section-top-0 {
 
 .section-single-inner .brand img {
   width: 100%;
+  height: 100%;
 }
 
 @supports (display: grid) {
@@ -12566,10 +12567,10 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-fixed .rd-navbar-brand img {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   max-width: 120px;
-  max-height: 40px;
+  max-height: 120px;
 }
 
 .rd-navbar-fixed.rd-navbar-logo-mobile .brand-logo-dark,
@@ -13551,6 +13552,8 @@ html.rd-navbar-fixed-linked .page {
 }
 
 .rd-navbar-modern.rd-navbar-static .rd-navbar-brand img {
+  width: 100%;
+  height: 100%;
   max-width: 160px;
   max-height: 70px;
 }
@@ -13739,6 +13742,7 @@ html.rd-navbar-fixed-linked .page {
   max-width: 141px;
   max-height: 35px;
   width: 100%;
+  height: 100%;
 }
 
 .rd-navbar-creative.rd-navbar-static.rd-navbar--is-stuck,
@@ -14011,6 +14015,8 @@ html.rd-navbar-fixed-linked .page {
 .rd-navbar-corporate.rd-navbar-static .rd-navbar-brand img {
   max-width: 180px;
   max-height: 80px;
+  height: 100%;
+  width: 100%;
 }
 
 .rd-navbar-corporate.rd-navbar-static .rd-nav-item.focus .rd-nav-link,
