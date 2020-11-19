@@ -143,7 +143,7 @@ vision.
 
 ## Screenshots
 
-![Example screenshot](./img/screenshot.png)
+![screenshot](./img/screenshot.png)
 
 ### Prerequisites
 
