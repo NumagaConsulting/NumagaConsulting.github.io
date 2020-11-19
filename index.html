@@ -184,6 +184,11 @@
           <i class="fab fa-raspberry-pi"></i>
         </div>
       </section>
+
+      <!-- quote of the day -->
+      <section id="quotes">
+        <h3>Quote of the day</h3>
+      </section>
     </main>
 
     <footer>
@@ -193,5 +198,25 @@
         Honneur et Fidélité </a
       >in France
     </footer>
+
+    <script>
+      const quote = document.getElementById('quotes');
+      const quote_text = document.createElement('p');
+
+      fetch('https://quotes.servehttp.com/')
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          // Work with JSON data here
+          // console.log(data);
+          quote_text.innerHTML = `<span class='quote-text'>"${data[0].QUOTE}"</span><span class='quote-author'> - ${data[0].AUTHOR}</span>`;
+          quote.appendChild(quote_text);
+        })
+        .catch((err) => {
+          quote_text.textContent = `Ouupooos, it's not working!`;
+          quote.appendChild(errorMessage);
+        });
+    </script>
   </body>
 </html>

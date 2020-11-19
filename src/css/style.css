@@ -112,6 +112,16 @@ nav a {
   margin: 15px 10px;
 }
 
+.quote-text {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.quote-author {
+  font-style: italic;
+  font-weight: 400;
+}
+
 footer {
   font-size: 1em;
   font-weight: 300;
