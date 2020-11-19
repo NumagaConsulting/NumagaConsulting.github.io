@@ -122,6 +122,21 @@ nav a {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 640px) {
+  .quote-text {
+    display: block;
+    font-style: italic;
+    font-weight: 200;
+  }
+
+  .quote-author {
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+    text-align: right;
+  }
+}
+
 footer {
   font-size: 1em;
   font-weight: 300;
