@@ -49,6 +49,12 @@ nav {
   align-items: center;
 }
 
+nav a {
+  margin: 0 0.5em;
+  color: black;
+  font-size: 2em;
+}
+
 @media only screen and (max-width: 640px) {
   nav a {
     color: black;
@@ -135,7 +141,7 @@ nav {
     font-style: italic;
     font-weight: 400;
     text-align: right;
-    margin-top: 10px;
+    margin-top: 0.7em;
   }
 }
 
