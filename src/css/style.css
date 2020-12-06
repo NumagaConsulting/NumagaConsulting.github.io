@@ -100,18 +100,20 @@ nav a {
 
 #projects p {
   font-weight: 200;
+  text-align: center;
+  font-style: italic;
 }
 
 .skill-set {
   display: inline-flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 .skill-set i {
-  font-size: 1em;
-  margin: 5px 7px;
+  font-size: 1.5em;
+  margin: 5px 10px;
 }
 
 .skills-container {
