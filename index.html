@@ -1,1 +1,261 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/live/jamming/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/live/jamming/logo192.png"/><link rel="manifest" href="/live/jamming/manifest.json"/><link rel="stylesheet" href="./reset.css"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600"/><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work%20Sans:300,500"/><title>Jammming</title><link href="/live/jamming/static/css/main.6d10c399.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,i,a=r[0],c=r[1],l=r[2],s=0,p=[];s<a.length;s++)i=a[s],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&p.push(o[i][0]),o[i]=0;for(n in c)Object.prototype.hasOwnProperty.call(c,n)&&(e[n]=c[n]);for(f&&f(r);p.length;)p.shift()();return u.push.apply(u,l||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,a=1;a<t.length;a++){var c=t[a];0!==o[c]&&(n=!1)}n&&(u.splice(r--,1),e=i(i.s=t[0]))}return e}var n={},o={1:0},u=[];function i(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,i),t.l=!0,t.exports}i.e=function(e){var r=[],t=o[e];if(0!==t)if(t)r.push(t[2]);else{var n=new Promise((function(r,n){t=o[e]=[r,n]}));r.push(t[2]=n);var u,a=document.createElement("script");a.charset="utf-8",a.timeout=120,i.nc&&a.setAttribute("nonce",i.nc),a.src=function(e){return i.p+"static/js/"+({}[e]||e)+"."+{3:"58a5d665"}[e]+".chunk.js"}(e);var c=new Error;u=function(r){a.onerror=a.onload=null,clearTimeout(l);var t=o[e];if(0!==t){if(t){var n=r&&("load"===r.type?"missing":r.type),u=r&&r.target&&r.target.src;c.message="Loading chunk "+e+" failed.\n("+n+": "+u+")",c.name="ChunkLoadError",c.type=n,c.request=u,t[1](c)}o[e]=void 0}};var l=setTimeout((function(){u({type:"timeout",target:a})}),12e4);a.onerror=a.onload=u,document.head.appendChild(a)}return Promise.all(r)},i.m=e,i.c=n,i.d=function(e,r,t){i.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,r){if(1&r&&(e=i(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(i.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)i.d(t,n,function(r){return e[r]}.bind(null,n));return t},i.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(r,"a",r),r},i.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},i.p="/live/jamming/",i.oe=function(e){throw console.error(e),e};var a=this.webpackJsonpjamming=this.webpackJsonpjamming||[],c=a.push.bind(a);a.push=r,a=a.slice();for(var l=0;l<a.length;l++)r(a[l]);var f=c;t()}([])</script><script src="/live/jamming/static/js/2.9e8de04e.chunk.js"></script><script src="/live/jamming/static/js/main.722574cc.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/all.min.css" />
+    <title>Shiwei's Profile</title>
+  </head>
+  <body>
+    <header>
+      <h2 id="name logo">Shiwei YU</h2>
+      <!-- <h3>Contact</h3> -->
+      <!-- contact -->
+      <nav>
+        <a href="https://github.com/NumagaConsulting" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="mailto:contact@numaga.fr"
+          ><i class="fas fa-feather-alt"></i
+        ></a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- about me -->
+      <section id="about-me">
+        <h3>About Me</h3>
+        <p class="text one">
+          Hello, I'm Yu, based in Paris. Once a while, my wife (back in days was
+          my girlfriend) told me that her travel agency needs a website for
+          sales. After a while searching on market, either the cost of building
+          site was not affordable or the time required for such job was
+          unexpected long. I decided to make a website with the knowledge I had
+          for her business demand.
+        </p>
+        <p class="text two">
+          At the time, I have been using python for data analyse and web
+          scraping for a while. But I haven't systematically learned HTML, CSS
+          and JS. Therefore, i started with wordpress for the site, along the
+          way of the building the site, I found to make my site fully function
+          that I have to buy a tons of plugins which was going to cost me much
+          more than our budget. Morevoer, the site still didn't come out the way
+          as we required.
+        </p>
+        <p class="text three">
+          I have no choice but start learning while building the site. Finally,
+          I made it with a few essential plugins to make this old CMS to an
+          e-commerce site, which have been online since May 2019 and over total
+          200K euro of transactions has been done on the site. Initially, the
+          site is deployed with docker on my home server. Along the way, I have
+          moved it over Aliyun which is more affordable AWS liked cloud service
+          provied by Alibaba, a global leading Chinese tech giant.
+        </p>
+        <p class="text four">
+          After 5 years of military service in French foreign legion, i decided
+          to to back to my civilian life. And I right hit on the period of COVID
+          and I have plenty of free time. I started taking a course at
+          Codeacademy to becaome a full stack developper. I wish at the end a
+          year, i could have acomplished the mojority of the courses. I wish to
+          rebuild the e-commance site for the company. From there, I would like
+          to be a freelancer to help the people to transform their business in
+          digital.
+        </p>
+        <p class="text five">
+          Welcome to check out my projects. If you would like someone to build a
+          site, YU is you are looking for.
+        </p>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h3>Projects</h3>
+
+        <!-- 1st project -->
+        <details class="project" close>
+          <summary class="project-title">
+            That first site I've ever built.
+          </summary>
+          <a href="https://uparisclub.com" target="_blank"
+            ><img
+              src="./src/image/uparisclub.jpg"
+              alt="uparisclub.com log"
+              class="project-image"
+          /></a>
+          <p class="project-desciption">
+            The screen shot of my first website, which is currently still
+            running on service.
+          </p>
+          <div class="skill-set">
+            <p><strong>Skills applied:</strong></p>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-wordpress"></i>
+            <i class="fab fa-js"></i>
+            <i class="fab fa-git"></i>
+            <i class="fab fa-chrome"></i>
+            <i class="fas fa-terminal"></i>
+            <i class="fab fa-python"></i>
+            <i class="fab fa-docker"></i>
+            <i class="fab fa-linux"></i>
+            <i class="fab fa-aws"></i>
+            <i class="fab fa-raspberry-pi"></i>
+          </div>
+        </details>
+
+        <!-- 2nd project -->
+        <details class="project" close>
+          <summary class="project-titil">
+            This is my first certificate from Codeacademy.
+          </summary>
+          <img
+            src="./src/image/first_certificat.jpg"
+            alt="a certificate HTML"
+          />
+          <p class="project-description">
+            After a few weeks of intro, I got my first certificate. I will get
+            more soon.
+          </p>
+          <div class="skill-set">
+            <p><strong>Skills qualified:</strong></p>
+            <i class="fab fa-html5"></i>
+          </div>
+        </details>
+
+        <!-- 3rd project -->
+        <details class="project" close>
+          <summary class="project-title">My first project with node</summary>
+          <a
+            href="https://numagaconsulting.github.io/live/mixed-message/"
+            target="_blank"
+            ><img
+              src="./src/image/quotes.jpg"
+              alt="a site loads random quotes"
+              class="project-image"
+          /></a>
+          <p class="project-description">
+            My first portofolio project, which back-end API running on node
+            deployed on the docker, and front-end page loads random quotes.
+          </p>
+          <div class="skill-set">
+            <p><strong>Skills applied:</strong></p>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fas fa-universal-access"></i>
+            <i class="fab fa-js"></i>
+            <!-- <i class="fab fa-react"></i> -->
+            <!-- <i class="fab fa-sketch"></i>
+            <i class="fab fa-figma"></i> -->
+            <i class="fab fa-git"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-chrome"></i>
+            <i class="fas fa-terminal"></i>
+            <i class="fab fa-node"></i>
+            <i class="fab fa-docker"></i>
+            <i class="fab fa-linux"></i>
+          </div>
+        </details>
+
+        <!-- 4rd project -->
+        <details class="project" close>
+          <summary class="project-title">My first react project</summary>
+          <a
+            href="https://numagaconsulting.github.io/live/jamming/"
+            target="_blank"
+            ><img
+              src="./src/image/jamming.png"
+              alt="a site loads random quotes"
+              class="project-image"
+          /></a>
+          <p class="project-description">
+            My first react portofolio project which allows end users to query
+            music on spotify and save music as playlist on her/his spotify
+            account.
+          </p>
+          <div class="skill-set">
+            <p><strong>Skills applied:</strong></p>
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <!-- <i class="fas fa-universal-access"></i> -->
+            <i class="fab fa-js"></i>
+            <i class="fab fa-react"></i>
+            <!-- <i class="fab fa-sketch"></i>
+            <i class="fab fa-figma"></i> -->
+            <i class="fab fa-git"></i>
+            <i class="fab fa-github"></i>
+            <i class="fab fa-chrome"></i>
+            <i class="fas fa-terminal"></i>
+            <i class="fab fa-node"></i>
+            <!-- <i class="fab fa-docker"></i> -->
+            <i class="fab fa-linux"></i>
+          </div>
+        </details>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h3>Skills</h3>
+        <div class="skills-container">
+          <i class="fab fa-html5"></i>
+          <i class="fab fa-css3-alt"></i>
+          <i class="fab fa-wordpress"></i>
+          <i class="fas fa-universal-access"></i>
+          <i class="fab fa-js"></i>
+          <i class="fab fa-react"></i>
+          <!-- <i class="fab fa-sketch"></i>
+          <i class="fab fa-figma"></i> -->
+          <i class="fab fa-git"></i>
+          <i class="fab fa-github"></i>
+          <i class="fab fa-chrome"></i>
+          <i class="fas fa-terminal"></i>
+          <i class="fab fa-npm"></i>
+          <i class="fab fa-yarn"></i>
+          <i class="fab fa-node"></i>
+          <i class="fab fa-python"></i>
+          <i class="fab fa-docker"></i>
+          <i class="fab fa-linux"></i>
+          <i class="fab fa-aws"></i>
+          <i class="fab fa-raspberry-pi"></i>
+        </div>
+      </section>
+
+      <!-- quote of the day -->
+      <section id="quotes">
+        <h3>Quote of the day</h3>
+      </section>
+    </main>
+
+    <footer>
+      Made with<a
+        href="https://www.legion-etrangere.com/?block=1&titre=FRENCH-FOREIGN-LEGION"
+      >
+        Honneur et Fidélité </a
+      >in France
+    </footer>
+
+    <script>
+      const quote = document.getElementById('quotes');
+      const quote_text = document.createElement('p');
+
+      fetch('https://quotes.servehttp.com/')
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          // Work with JSON data here
+          // console.log(data);
+          quote_text.innerHTML = `<span class='quote-text'>"${data[0].QUOTE}"</span><span class='quote-author'> - ${data[0].AUTHOR}</span>`;
+          quote.appendChild(quote_text);
+        })
+        .catch((err) => {
+          quote_text.textContent = `Ouupooos, it's not working!`;
+          quote.appendChild(errorMessage);
+        });
+    </script>
+  </body>
+</html>
