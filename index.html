@@ -78,9 +78,7 @@
 
         <!-- 1st project -->
         <details class="project" close>
-          <summary class="project-title">
-            That first site I've ever built
-          </summary>
+          <summary class="project-title">The first site I've built</summary>
           <a href="https://uparisclub.com" target="_blank"
             ><img
               src="./src/image/uparisclub.jpg"
@@ -180,9 +178,7 @@
 
         <!-- certificats -->
         <details class="project" close>
-          <summary class="project-titil">
-            Courses that I've completed on Codeacademy
-          </summary>
+          <summary class="project-titil">My certified skills</summary>
           <div class="skill-set">
             <p><strong>Skills qualified:</strong></p>
             <i class="fab fa-html5"></i>
@@ -289,18 +285,18 @@
       const quote_text = document.createElement('p');
 
       fetch('https://quotes.servehttp.com/')
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          // Work with JSON data here
-          // console.log(data);
-          quote_text.innerHTML = `<span class='quote-text'>"${data[0].QUOTE}"</span><span class='quote-author'> - ${data[0].AUTHOR}</span>`;
+        .then(
+          (response) => {
+            return response.json();
+          },
+          (networkError) => {
+            quote_text.textContent = `Ouupooos, it's not working!`;
+            quote.appendChild(quote_text);
+          }
+        )
+        .then((jsonResponse) => {
+          quote_text.innerHTML = `<span class='quote-text'>"${jsonResponse[0].QUOTE}"</span><span class='quote-author'> - ${jsonResponse[0].AUTHOR}</span>`;
           quote.appendChild(quote_text);
-        })
-        .catch((err) => {
-          quote_text.textContent = `Ouupooos, it's not working!`;
-          quote.appendChild(errorMessage);
         });
     </script>
   </body>
