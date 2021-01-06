@@ -14,7 +14,7 @@ app.appendChild(logo);
 app.appendChild(container);
 
 // example with fetch API
-fetch('https://quotes.servehttp.com/') // change to http://localhost:5000 to run locally
+fetch('https://quotes.legionnaire.world/') // change to http://localhost:5000 to run locally
   .then((response) => {
     return response.json();
   })
