@@ -15,9 +15,16 @@ app.appendChild(container);
 
 // example with fetch API
 fetch('https://quotes.legionnaire.world/') // change to http://localhost:5000 to run locally
-  .then((response) => {
-    return response.json();
-  })
+  .then(
+    (response) => {
+      return response.json();
+    },
+    (networkError) => {
+      const errorMessage = document.createElement('marquee');
+      errorMessage.textContent = `Ouupooos, it's not working!`;
+      app.appendChild(errorMessage);
+    }
+  )
   .then((data) => {
     // Work with JSON data here
     // console.log(data);
@@ -36,12 +43,12 @@ fetch('https://quotes.legionnaire.world/') // change to http://localhost:5000 to
       card.appendChild(h1);
       card.appendChild(p);
     });
-  })
-  .catch((err) => {
-    const errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Ouupooos, it's not working!`;
-    app.appendChild(errorMessage);
   });
+// .catch((err) => {
+//   const errorMessage = document.createElement('marquee');
+//   errorMessage.textContent = `Ouupooos, it's not working!`;
+//   app.appendChild(errorMessage);
+// });
 
 // example with XHR
 
