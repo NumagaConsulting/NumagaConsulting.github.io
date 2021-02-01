@@ -231,9 +231,7 @@
       </section>
 
       <!-- quote of the day -->
-      <section id="quotes">
-        <h3>Quote of the day</h3>
-      </section>
+      <section id="quotes"></section>
     </main>
 
     <footer>
@@ -242,23 +240,27 @@
     </footer>
 
     <script>
-      const quote = document.getElementById('quotes');
+      // create h3 and p for quotes
+      const my_quote = document.getElementById('quotes');
+      const h = document.createElement('h3');
       const quote_text = document.createElement('p');
 
-      fetch('https://quotes.legionnaire.world/')
-        .then(
-          (response) => {
-            return response.json();
-          },
-          (networkError) => {
-            quote_text.textContent = `Ouupooos, it's not working!`;
-            quote.appendChild(quote_text);
-          }
-        )
-        .then((jsonResponse) => {
-          quote_text.innerHTML = `<span class='quote-text'>"${jsonResponse[0].QUOTE}"</span><span class='quote-author'> - ${jsonResponse[0].AUTHOR}</span>`;
-          quote.appendChild(quote_text);
-        });
+      const getQuote = async () => {
+        try {
+          const response = await fetch('https://quote.numaga.fr/api/quotes');
+          const jsonResponse = await response.json();
+          const { quote, author, tag } = jsonResponse.quotes.content[0];
+
+          h.textContent = `Inspirational quote about ${tag}`;
+          my_quote.appendChild(h);
+          quote_text.innerHTML = `<span class='quote-text'>"${quote}"</span><span class='quote-author'> - ${author}</span>`;
+          my_quote.appendChild(quote_text);
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
+      window.addEventListener('load', getQuote);
     </script>
   </body>
 </html>
