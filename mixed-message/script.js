@@ -15,9 +15,9 @@ app.appendChild(container);
 
 const fetchQuote = async () => {
   try {
-    const req = await fetch('https://quote.numaga.fr/api/quotes');
-    const jsonReq = await req.json();
-    const data = await jsonReq.qutoes.content;
+    const res = await fetch('https://quote.numaga.fr/api/quotes');
+    const jsonRes = await req.json();
+    const data = await jsonRes.quotes.content;
     data.forEach((element) => {
       const { quote, author, tag } = element;
       const card = document.createElement('div');
