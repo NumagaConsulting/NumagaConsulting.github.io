@@ -18,8 +18,8 @@ const fetchQuote = async () => {
     const req = await fetch('https://quote.numaga.fr/api/quotes');
     const jsonReq = await req.json();
     const data = await jsonReq.qutoes.content;
-    data.forEach((quote) => {
-      const { quote, author, tag } = quote;
+    data.forEach((element) => {
+      const { quote, author, tag } = element;
       const card = document.createElement('div');
       card.setAttribute('class', 'card');
 
