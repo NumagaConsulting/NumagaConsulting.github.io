@@ -16,7 +16,7 @@ app.appendChild(container);
 const fetchQuote = async () => {
   try {
     const res = await fetch('https://quote.numaga.fr/api/quotes');
-    const jsonRes = await req.json();
+    const jsonRes = await res.json();
     const data = await jsonRes.quotes.content;
     data.forEach((element) => {
       const { quote, author, tag } = element;
