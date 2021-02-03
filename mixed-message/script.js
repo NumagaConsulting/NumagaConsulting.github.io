@@ -38,7 +38,7 @@ const fetchQuote = async () => {
     const errorMessage = document.createElement('marquee');
     errorMessage.textContent = `Ouupooos, it's not working!`;
     app.appendChild(errorMessage);
-    console.error(err);
+    console.log(err);
   }
 };
 
