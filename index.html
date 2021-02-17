@@ -324,11 +324,11 @@
 
       const getQuote = async () => {
         try {
-          const response = await fetch('https://quote.numaga.fr/api/quotes');
+          const response = await fetch('https://quote.numaga.fr/api/quotes?tag=computer');
           const jsonResponse = await response.json();
           const { quote, author, tag } = jsonResponse.quotes.content[0];
-
-          h.textContent = `Inspirational quote about ${tag}`;
+          let tags = tag.split(',');
+          h.textContent = `Inspirational quote on ${tags[tags.length - 1]}`;
           my_quote.appendChild(h);
           quote_text.innerHTML = `<span class='quote-text'>"${quote}"</span><span class='quote-author'> - ${author}</span>`;
           my_quote.appendChild(quote_text);
